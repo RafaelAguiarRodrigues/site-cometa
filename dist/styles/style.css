@@ -1,0 +1,81 @@
+html, body {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+}
+
+.cabecalho {
+  align-items: center;
+  background-color: #3D1766;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+}
+.cabecalho .container {
+  align-items: center;
+  display: flex;
+}
+.cabecalho .container .cabecalho__titulo {
+  color: #FFFFFF;
+  font-size: 3rem;
+  padding: 1em;
+  text-shadow: 4px 4px 4px black;
+}
+.cabecalho .navegacao {
+  display: flex;
+  margin-right: 6em;
+}
+.cabecalho .navegacao__lista {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.cabecalho .navegacao__lista .item__botao {
+  display: none;
+}
+.cabecalho .navegacao__lista .item__botao:checked ~ .lista-menu {
+  display: block;
+}
+.cabecalho .navegacao__lista .lista__item {
+  color: #FFFFFF;
+  font-size: 1.2em;
+  padding: 0.8em;
+  text-transform: uppercase;
+}
+.cabecalho .navegacao__lista .lista__item:hover {
+  color: #f7020e;
+  cursor: pointer;
+}
+.cabecalho .navegacao__lista .lista__item___link {
+  color: #FFFFFF;
+  font-size: 1.2em;
+  text-decoration: none;
+}
+.cabecalho .navegacao__lista .lista-menu {
+  background-color: #6F1AB6;
+  display: none;
+  position: absolute;
+  margin-right: 7em;
+  top: 100%;
+  width: 20vw;
+}
+.cabecalho .navegacao__lista .lista-menu .lista-menu__item, .cabecalho .navegacao__lista .lista-menu .lista-menu__titulo {
+  border: 1px solid #FFFFFF;
+  font-size: 1.2em;
+  padding: 1em;
+}
+.cabecalho .navegacao__lista .lista-menu .lista-menu__item .lista-menu__link, .cabecalho .navegacao__lista .lista-menu .lista-menu__titulo .lista-menu__link {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.banner {
+  background-image: url(../../img/Avante-Papelaria-1-1068x608.jpg);
+  background-position: center;
+  height: 70vh;
+  width: 100%;
+}
+.banner:__balao {
+  background: black;
+  opacity: 0.6;
+}/*# sourceMappingURL=style.css.map */

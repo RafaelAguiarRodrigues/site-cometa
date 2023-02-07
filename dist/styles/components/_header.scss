@@ -1,0 +1,78 @@
+@import '../abstract/variaveis';
+
+.cabecalho {
+    align-items: center;
+    background-color: $roxo-escuro;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+
+    .container {
+        align-items: center;
+        display: flex;
+
+        .cabecalho__titulo {
+            color: $branco;
+            font-size: $fonte-grande;
+            padding: 1em;
+            text-shadow: 4px 4px 4px black;
+        }
+    }
+
+    .navegacao {
+        display: flex;
+        margin-right: 6em;
+
+        &__lista {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            
+            .item__botao {
+                display: none;
+
+                &:checked~.lista-menu {
+                    display: block;
+                }
+            }
+            .lista__item {
+                color: $branco;
+                font-size: 1.2em;
+                padding: 0.8em;
+                text-transform: uppercase;
+
+                &:hover {
+                    color: $vermelho;
+                    cursor: pointer;
+                }
+
+                &___link {
+                    color: $branco;
+                    font-size: 1.2em;
+                    text-decoration: none;
+                }
+            }
+
+            .lista-menu {
+                background-color: $roxo-claro;
+                display: none;
+                position: absolute;
+                margin-right: 7em;
+                top: 100%;
+                width: 20vw;
+
+                .lista-menu__item, .lista-menu__titulo {
+                    border: 1px solid $branco;
+                    font-size: 1.2em;
+                    padding: 1em;
+                    
+                    .lista-menu__link {
+                        color: $branco;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}
