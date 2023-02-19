@@ -58,6 +58,7 @@ html, body {
   margin-right: 7em;
   top: 100%;
   width: 20vw;
+  z-index: 1;
 }
 .cabecalho .navegacao__lista .lista-menu .lista-menu__item, .cabecalho .navegacao__lista .lista-menu .lista-menu__titulo {
   border: 1px solid #FFFFFF;
@@ -70,12 +71,42 @@ html, body {
 }
 
 .banner {
-  background-image: url(../../img/Avante-Papelaria-1-1068x608.jpg);
+  align-items: center;
+  background: url(../../img/Avante-Papelaria-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
-  height: 70vh;
+  display: flex;
+  justify-content: center;
+  height: 55vh;
   width: 100%;
 }
-.banner:__balao {
-  background: black;
-  opacity: 0.6;
+.banner__balao {
+  align-items: center;
+  background-color: #000000;
+  border-radius: 14px;
+  display: flex;
+  justify-content: center;
+  height: 55%;
+  opacity: 0.8;
+  width: 30%;
+}
+.banner__balao___texto {
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.sobre__container {
+  margin: 5% 10%;
+}
+.sobre__container .sobre__titulo {
+  border-bottom: 4px outset #c70000;
+  font-size: 2rem;
+  margin-bottom: 1em;
+  padding: 0.6em;
+  text-transform: uppercase;
+}
+.sobre__container .sobre__texto {
+  padding-bottom: 1em;
 }/*# sourceMappingURL=style.css.map */

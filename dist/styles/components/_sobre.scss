@@ -1,0 +1,17 @@
+@import '../abstract/variaveis';
+
+.sobre__container {
+    margin: 5% 10%;
+
+    .sobre__titulo {
+        border-bottom: 4px outset $vermelho-escuro;
+        font-size: calc($fonte-grande / 1.5);
+        margin-bottom: 1em;
+        padding: 0.6em;
+        text-transform: uppercase;
+    }
+
+    .sobre__texto {
+        padding-bottom: 1em;
+    }
+}

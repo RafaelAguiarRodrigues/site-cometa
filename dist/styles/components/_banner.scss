@@ -1,13 +1,30 @@
 @import '../abstract/variaveis';
 
 .banner {
-    background-image: url(../../img/Avante-Papelaria-1-1068x608.jpg);
+    align-items: center;
+    background: url(../../img/Avante-Papelaria-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
-    height: 70vh;
+    display: flex;
+    justify-content: center;
+    height: 55vh;
     width: 100%;
 
-    &:__balao {
-        background: black;
-        opacity: 0.6;
+    &__balao {
+        align-items: center;
+        background-color: $preto;
+        border-radius: 14px;
+        display: flex;
+        justify-content: center;
+        height: 55%;
+        opacity: 0.8;
+        width: 30%;
+
+        &___texto {
+            color: $branco;
+            text-align: center;
+            font-size: calc($fonte-grande / 1.5);
+        }
     }
 }
