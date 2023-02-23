@@ -14,6 +14,7 @@ html, body {
 .cabecalho .container {
   align-items: center;
   display: flex;
+  flex-wrap: wrap;
 }
 .cabecalho .container .cabecalho__titulo {
   color: #FFFFFF;
@@ -24,6 +25,7 @@ html, body {
 .cabecalho .navegacao {
   display: flex;
   margin-right: 6em;
+  flex-wrap: wrap;
 }
 .cabecalho .navegacao__lista {
   align-items: center;
@@ -78,7 +80,7 @@ html, body {
   background-position: center;
   display: flex;
   justify-content: center;
-  height: 55vh;
+  height: 60vh;
   width: 100%;
 }
 .banner__balao {
@@ -104,9 +106,30 @@ html, body {
   border-bottom: 4px outset #c70000;
   font-size: 2rem;
   margin-bottom: 1em;
-  padding: 0.6em;
+  padding-bottom: 0.6em;
+  text-transform: uppercase;
+}
+.sobre__container .sobre__subtitulo {
+  font-size: 2rem;
+  margin-bottom: 1em;
+  padding-bottom: 0.6em;
   text-transform: uppercase;
 }
 .sobre__container .sobre__texto {
   padding-bottom: 1em;
+}
+
+.sobre__container:nth-child(2) {
+  display: inline-block;
+  margin: 0% 8% 5% 10%;
+  width: 40%;
+}
+
+.sobre__container--imagem {
+  display: inline;
+  width: 50%;
+}
+.sobre__container--imagem .sobre__imagem {
+  display: inline-block;
+  width: 30%;
 }/*# sourceMappingURL=style.css.map */
