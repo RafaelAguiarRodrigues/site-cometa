@@ -8,6 +8,10 @@
     justify-content: space-between;
     position: relative;
 
+    @media screen and (max-width: 768px) {
+        flex-wrap: nowrap;
+    }
+
     .container {
         align-items: center;
         display: flex;
@@ -23,14 +27,18 @@
 
     .navegacao {
         display: flex;
-        margin-right: 6em;
+        padding-right: 6em;
         flex-wrap: wrap;
-
+        
+        @media screen and (max-width: 768px) {
+            padding-right: 2em
+        }
         &__lista {
             align-items: center;
             display: flex;
             justify-content: center;
-            
+
+
             .item__botao {
                 display: none;
 
@@ -38,11 +46,16 @@
                     display: block;
                 }
             }
+
             .lista__item {
                 color: $branco;
                 font-size: 1.2em;
                 padding: 0.8em;
                 text-transform: uppercase;
+
+                @media screen and (max-width: 768px) {
+                    display: none;
+                }
 
                 &:hover {
                     color: $vermelho;
@@ -53,6 +66,24 @@
                     color: $branco;
                     font-size: 1.2em;
                     text-decoration: none;
+
+                    &:hover {
+                        color: $vermelho;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .lista__item--botao {
+                display: none;
+                background-image: url(../../img/Menu.svg);
+                background-position: center;
+                background-repeat: no-repeat;
+                height: 24px;
+                width: 24px;
+
+                @media screen and (max-width: 768px) {
+                    display: inline-block;
                 }
             }
 
@@ -65,14 +96,24 @@
                 width: 20vw;
                 z-index: 1;
 
-                .lista-menu__item, .lista-menu__titulo {
+
+                @media screen and (max-width: 768px) {
+                    width: auto;
+                }
+                .lista-menu__item,
+                .lista-menu__titulo {
                     border: 1px solid $branco;
                     font-size: 1.2em;
                     padding: 1em;
-                    
-                    .lista-menu__link {
+
+                    .lista-menu__link,
+                    .lista-menu__titulo {
                         color: $branco;
                         text-decoration: none;
+
+                        &:hover {
+                            color: $vermelho;
+                        }
                     }
                 }
             }

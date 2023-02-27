@@ -1,0 +1,9 @@
+@import '../abstract/variaveis';
+
+.rodape {
+    color: $branco;
+    &__container {
+        background-color: $preto;
+        padding: 2% 5%;
+    }
+}

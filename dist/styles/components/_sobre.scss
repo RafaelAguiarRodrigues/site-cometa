@@ -27,15 +27,26 @@
 .sobre__container:nth-child(2) {
     display: inline-block;
     margin: 0% 8% 5% 10%;
-    width: 40%;
+    width: 40vw;
+
+    @media screen and (max-width: 768px) {
+        width: 80%;
+    }
 }
 
 .sobre__container--imagem {
     display: inline;
-    width: 50%;
+    width: 50vw;
 
     .sobre__imagem {
         display: inline-block;
-        width: 30%;
+        height: auto;
+        width: 30vw;
+        
+        @media screen and (max-width: 768px) {
+            display: block;
+            margin: 2em auto;
+            width: 80%;
+        }
     }
 }
